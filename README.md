@@ -19,7 +19,7 @@ For Linux support, the custom launchers pose the greatest and pretty much the on
 
 BSGO server|Launcher works with WINE|Temporary workaround|Linux support planned?
 --|--|--|--
-[Mementomori](https://discord.gg/jsGGZZZ9xu)|<font color=FF7F50>limited/difficult</font>|provided by NukeSanity|<font color=DC143C>confirmed by Xulek months ago</font>
+[Mementomori](https://discord.gg/jsGGZZZ9xu)|<font color=FF7F50>limited/difficult</font>|PM NukeSanity on Discord|<font color=DC143C>confirmed by Xulek months ago</font>
 
 **Notes:**
 - This info might change. I will do my best to keep this information up-to-date.
