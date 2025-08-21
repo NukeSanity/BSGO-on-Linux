@@ -32,14 +32,14 @@ BSGO server|Launcher works with WINE|Temporary workaround|Linux support planned?
 ## Instructions
 1. **Enable 32-bit architecture.** This is because the BSGO client contains some 32-bit executables. By default, modern Linux distributions block the execution of 32-bit code for security reasons and for "cleanness". But we're not clean, we're playing a very old game. Hence, we need to enable 32-bit.
 2. **Update & upgrade system.** This is to ensure that your system fetches 32-bit configurations.
-4. **Install WINE.** In this guide, we will be installing a package called `winetricks`, which contains everything we need for BSGO.
+3. **Install WINE.** In this guide, we will be installing a package called `winetricks`, which contains everything we need for BSGO.
 
 ### Instructions by Platform
 - [Debian-based](Distros/Debian.md) (Ubuntu, Linux Mint, PopOS, ElementaryOS ...)
 - [Arch-based](Distros/Arch.md) (SteamOS, Manjaro, EndeavourOS, ArcoLinux, ...)
 - [Steam Deck+SteamOS](Distros/SteamDeck.md)
 
-For other platforms, find out how to perform steps 1-4 on your own.
+For other platforms, find out how to perform steps 1-3 on your own.
 
 ## Testing your setup
 1. **Launch BSGO client.** For example:
@@ -58,15 +58,16 @@ If you can launch the launcher, you're good to go. Otherwise, you might need som
 ## Known Bugs on Linux
 BSGO tends to work very well on Linux. However, you may encounter some of the following issues:
 
-- You cannot enter the name for your character. In truth, you can - but the text you enter will be invisible.
+- In the character creation window, the name you enter for your character is invisible. You will have to be careful while typing, as you cannot see your own typos.
 - Ping is - (you can't see your ping)
+- The chat font, while perfectly readable, looks noticeably different
 
 This is a non-exhaustive list.
 
 
 ## Potential Issues
-### Hybrid Graphics
-Hybrid graphics, especially on Intel CPUs and NVIDIA GPUs, seems to cause problems for linux compatibility. If you receive cryptic Vulkan errors after launching `wine64 ./bsgo.exe`, you might want to force your dedicated GPU to run.
+### Hybrid Graphics (e.g. Laptops)
+Hybrid graphics, especially on Intel CPUs and NVIDIA GPUs, seems to cause problems for linux compatibility. If you receive cryptic Vulkan errors after launching `wine64 ./bsgo.exe`, it could be because your game is being launched on the integrated rather than the dedicated GPU. You might want to force your dedicated GPU to run.
 
 For NVIDIA GPUs, make sure that your drivers are installed and up-to-date. Also, make sure that `prime-run` is installed:
 
